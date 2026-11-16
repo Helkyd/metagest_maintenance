@@ -292,12 +292,27 @@ doctype_js = {
     "Material Request": "public/js/material_request.js",
 }
 
-# Export the non-standard maintenance asset cost report
+# Maintenance deployment fixtures
 fixtures = [
     {
         "dt": "Report",
         "filters": [
             ["name", "=", "Custos de Manutenção por Activo"]
+        ]
+    },
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "in", [
+                "Maintenance Work Order-custom_external_services",
+                "Maintenance Work Order-custom_external_services_tab"
+            ]]
+        ]
+    },
+    {
+        "dt": "DocType",
+        "filters": [
+            ["name", "=", "Maintenance Work Order External Service"]
         ]
     }
 ]

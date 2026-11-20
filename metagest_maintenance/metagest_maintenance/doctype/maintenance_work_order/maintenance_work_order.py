@@ -225,6 +225,14 @@ class MaintenanceWorkOrder(Document):
                         abs(flt(before) - flt(after))
                         > 0.000001
                     )
+                elif fieldname == "accepted_on":
+                    from frappe.utils import getdate
+
+                    changed = (
+                        getdate(before) if before else None
+                    ) != (
+                        getdate(after) if after else None
+                    )
                 else:
                     changed = (before or "") != (after or "")
 

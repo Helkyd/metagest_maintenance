@@ -4,3 +4,8 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+metagest_maintenance.patches.add_asset_meter_reading
+
+metagest_maintenance.patches.add_usage_maintenance_fields
+
+metagest_maintenance.patches.add_usage_maintenance_tasks

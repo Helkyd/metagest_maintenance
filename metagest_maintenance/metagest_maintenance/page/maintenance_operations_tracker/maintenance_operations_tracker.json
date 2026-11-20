@@ -1,0 +1,10 @@
+{
+ "doctype": "Page",
+ "name": "maintenance-operations-tracker",
+ "page_name": "maintenance-operations-tracker",
+ "title": "Maintenance Operations Tracker",
+ "module": "Metagest Maintenance",
+ "standard": "Yes",
+ "system_page": 0,
+ "roles": []
+}

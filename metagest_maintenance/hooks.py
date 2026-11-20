@@ -276,6 +276,12 @@ doc_events = {
             "block_maintenance_reconciliation_cancel"
         ),
     },
+    "Asset Meter Reading": {
+        "validate": "metagest_maintenance.maintenance_meter.validate_meter_reading",
+    },
+    "Maintenance Work Order": {
+        "on_update": "metagest_maintenance.maintenance_log_sync.sync_work_order_closure",
+    },
     "Stock Entry": {
         "validate": "metagest_maintenance.stock_integration.validate_stock_entry",
         "before_submit": [
@@ -290,6 +296,7 @@ doc_events = {
 
 doctype_js = {
     "Material Request": "public/js/material_request.js",
+    "Asset Maintenance Log": "public/js/asset_maintenance_log.js",
 }
 
 # Maintenance deployment fixtures
